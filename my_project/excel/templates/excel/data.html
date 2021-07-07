@@ -1,0 +1,16 @@
+{% extends  'excel/base.html' %}
+
+{% block content %}
+<p> {{id}} </p>
+<table>
+{% for row in data %}
+    <tr>
+        {% for a in row%}
+            <td> a </td>
+        {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+{% endblock %}
